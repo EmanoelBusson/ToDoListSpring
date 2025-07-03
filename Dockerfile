@@ -1,7 +1,7 @@
 # --- Build Stage ---
 # Use a Debian-based OpenJDK 21 image for the build stage.
 # 'openjdk:21-jdk' is the most common variant that includes apt-get.
-FROM openjdk:21-jdk as build # <--- REMOVED COMMENT FROM THIS LINE
+FROM openjdk:21-jdk as build 
 
 # Update package lists and install Maven.
 RUN apt-get update && apt-get install -y maven
